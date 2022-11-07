@@ -31,8 +31,6 @@ def create_app():
 
     # add some players
     app.add_player('random', AgentRandomSchieber())
-    app.add_player('random', AgentRandomSchieber())
-    app.add_player('JASSMASTER3000', Agent_rulebased())
     app.add_player('JASSMASTER3000', Agent_rulebased())
 
     return app
