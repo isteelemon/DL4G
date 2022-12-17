@@ -8,6 +8,7 @@ Example how to use flask to create a service for one or more players
 import logging
 
 from jass.agents.Agent_rulebased import Agent_rulebased
+from jass.agents.MCTS_agent import MCTS_agent
 from jass.service.player_service_app import PlayerServiceApp
 from jass.agents.agent_random_schieber import AgentRandomSchieber
 
@@ -30,8 +31,10 @@ def create_app():
     # app.config.from_pyfile('my_player_service.cfg', silent=False)
 
     # add some players
-    app.add_player('random', AgentRandomSchieber())
-    app.add_player('JASSMASTER3000', Agent_rulebased())
+    app.add_player('random1', AgentRandomSchieber())
+    app.add_player('random2', AgentRandomSchieber())
+    app.add_player('random3', AgentRandomSchieber())
+    app.add_player('JASSMASTER3000', MCTS_agent())
 
     return app
 
