@@ -7,7 +7,6 @@ Example how to use flask to create a service for one or more players
 """
 import logging
 
-from jass.agents.Agent_rulebased import Agent_rulebased
 from jass.agents.MCTS_agent import MCTS_agent
 from jass.service.player_service_app import PlayerServiceApp
 from jass.agents.agent_random_schieber import AgentRandomSchieber
